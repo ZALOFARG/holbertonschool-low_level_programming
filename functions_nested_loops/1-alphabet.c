@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * void
+ * void - check the code
  *
- * no return
- *
- * Description: puts the alphabet from a til z
+ * Description: print_alphabet prints de alphabet from a til z
  */
 void print_alphabet(void)
 {
