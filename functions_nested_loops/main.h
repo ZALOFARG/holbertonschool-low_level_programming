@@ -2,6 +2,6 @@
 #define MAIN_H
 
 int _putchar(char c);
-int add(int, int);
+int print_last_digit(int);
 
 #endif
