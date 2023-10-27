@@ -13,15 +13,13 @@ int main(void)
 
 	for (n = 48; n < 58; n++)
 	{
+		putchar(n);
 		if (n == 57)
 		{
-			putchar(n);
+			continue;
 		}
-		else
-		{
-			putchar(n);
-			putchar(44);
-		}
+		putchar(44);
+		putchar(32);
 	}
 	putchar('\n');
 	return (0);
