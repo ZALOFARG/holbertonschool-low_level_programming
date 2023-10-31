@@ -1,16 +1,16 @@
 CC=gcc
-SRC=main.c school.c
-OBJ= main.o school.o
+SRC=main.c school.c m.h
+NAME=school
+OFUENTE=$(CC) -c $(SRC)
+EOBJETOS=$(CC) -o $(NAME) *.o
+CLEAN= @rm *.o *.gch
 
-BINARIO=school
+all: compilarFuente compilarObjetos clean
 
-all: $(BINARIO)
+compilarFuente: $(SRC)
+	$(OFUENTE)
 
-$(BINARIO): $(OBJ)
-	$(CC) $^ -o $@
-
-%.o: %.c
-	$(CC) -c $^ -o $@
-
+compilarObjetos:
+	$(EOBJETOS)
 clean:
-	rm -rf $(BINARIO) $(OBJ)
+	$(CLEAN)
