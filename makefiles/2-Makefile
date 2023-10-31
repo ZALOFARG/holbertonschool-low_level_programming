@@ -1,0 +1,15 @@
+CC=gcc
+SRC=main.c school.c
+OBJ=main.o school.o
+NAME=school
+
+all: compilarFuente compilarObjetos clean
+
+compilarFuente: $(SRC)
+	$(CC) -c $(SRC)
+
+compilarObjetos: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME) 
+
+clean:
+	rm -rf *.o
