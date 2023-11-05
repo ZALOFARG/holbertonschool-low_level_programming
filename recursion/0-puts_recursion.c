@@ -1,5 +1,12 @@
 #include "main.h"
-
+/**
+ * _puts_recursion - check the code
+ * @s: string literal
+ *
+ * Description: puts ch to ch to make a full sentence
+ *
+ * Return: none cuz void
+ */
 void _puts_recursion(char *s)
 {
 	if (*s == '\0')
