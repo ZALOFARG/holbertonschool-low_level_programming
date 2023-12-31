@@ -8,6 +8,7 @@
  *
  * Return: (1) if does; (0) if doesnt
  */
+
 int _islower(int c)
 {
 	if ((c >= 97) && (c < 123))
