@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * void - check the code
- *
- * Print_alphabet: prints 10 rows de alphabet from a til z
+ * print_alphabet_x10 - prints 10 rows de alphabet from a til z
  */
+
 void print_alphabet_x10(void)
 {
 	char letra;
