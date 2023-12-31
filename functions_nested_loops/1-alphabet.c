@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * void - check the code
- *
- * Description: print_alphabet prints de alphabet from a til z
+ * print_alphabet - Print the alphabet, in lowercase, followed by a new line
  */
+
 void print_alphabet(void)
 {
 	char letra;
