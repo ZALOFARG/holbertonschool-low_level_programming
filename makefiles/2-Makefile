@@ -1,16 +1,7 @@
-CC=gcc
-SRC=main.c school.c m.h
-NAME=school
-OFUENTE=$(CC) -c $(SRC)
-EOBJETOS=$(CC) -o $(NAME) *.o
-CLEAN= @rm *.o *.gch
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
 
-all: compilarFuente compilarObjetos clean
-
-compilarFuente: $(SRC)
-	$(OFUENTE)
-
-compilarObjetos:
-	$(EOBJETOS)
-clean:
-	$(CLEAN)
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
